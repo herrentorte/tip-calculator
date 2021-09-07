@@ -1,0 +1,29 @@
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  }
+
+#calculator {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  height: 500px;
+}
+
+#body {
+  padding-top: 5%;
+  text-align: center;
+}
+
+#input {
+  float: left;
+  width: 50%;
+  }
+
+#output {
+  float: left;
+  width: 50%;
+}
