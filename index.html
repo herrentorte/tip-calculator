@@ -15,32 +15,45 @@
             <div id="bill">
               <h5>Bill</h5>
               <i class="fa fa-dollar icon"></i>
-              <input type="number" class="bar-input" id="input-bill">
+              <input type="number" class="bar-input" id="input-bill" value="0">
             </div>
             <div id="select-tip">
               <h5>Select Tip %</h5>
-              <input type="button" class="perc-button">
-              <input type="button" class="perc-button">
-              <input type="button" class="perc-button">
-              <input type="button" class="perc-button">
-              <input type="button" class="perc-button">
+              <input type="button" class="perc-button" value="5%" id="button-per-5" onclick="perc5()">
+              <input type="button" class="perc-button" value="10%" id="button-per-10" onclick="perc10()">
+              <input type="button" class="perc-button" value="15%" id="button-per-15" onclick="perc15()">
+              <input type="button" class="perc-button" value="25%" id="button-per-25" onclick="perc25()">
+              <input type="button" class="perc-button" value="50%" id="button-per-50" onclick="perc50()">
               <input type="text" class="perc-input" value="Custom">
             </div>
             <div id="number-people">
               <h5>Number of People</h5>
               <i class="fa fa-user icon"></i>
-              <input type="number" class="bar-input" id="input-people">
+              <input type="number" class="bar-input" id="input-people" value="0">
             </div>
           </div>
           <div id="output">
             <div id="result">
+              <div class="output-heading">
+                <h5>Tip Amount</h5>
+                <h6>/ person</h6>
+              </div>
+              <div class="output-value">
+              </div>
+              <div class="output-heading">
+                <h5>Total</h5>
+                <h6>/ person</h6>
+              </div>
+              <div class="output-value">
+              </div>
             </div>
             <div id="reset">
-              <input type="button" class="reset-button">
+              <input type="button" class="reset-button" value="RESET">
             </div>
           </div>
         </div>
       </div>
+      <script src="main.js"></script>
     </div>
   </body>
 </html>
