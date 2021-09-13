@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -12,17 +13,22 @@
         <div id="calculator">
           <div id="input">
             <div id="bill">
+              <h5>Bill</h5>
+              <i class="fa fa-dollar icon"></i>
               <input type="number" class="bar-input" id="input-bill">
             </div>
             <div id="select-tip">
+              <h5>Select Tip %</h5>
               <input type="button" class="perc-button">
               <input type="button" class="perc-button">
               <input type="button" class="perc-button">
               <input type="button" class="perc-button">
               <input type="button" class="perc-button">
-              <input type="number" class="perc-input">
+              <input type="text" class="perc-input" value="Custom">
             </div>
             <div id="number-people">
+              <h5>Number of People</h5>
+              <i class="fa fa-user icon"></i>
               <input type="number" class="bar-input" id="input-people">
             </div>
           </div>
