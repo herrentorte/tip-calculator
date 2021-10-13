@@ -13,42 +13,50 @@
         <div id="calculator">
           <div id="input">
             <div id="bill">
-              <h5>Bill</h5>
+              <h2>Bill</h2>
               <i class="fa fa-dollar icon"></i>
-              <input type="number" class="bar-input" id="input-bill" value="0">
+              <input type="number" class="bar-input" id="input-bill" value="0" onclick="removeValueBill()" onchange="changeInfo()">
             </div>
             <div id="select-tip">
-              <h5>Select Tip %</h5>
+              <h2>Select Tip %</h2>
               <input type="button" class="perc-button" value="5%" id="button-per-5" onclick="perc5()">
               <input type="button" class="perc-button" value="10%" id="button-per-10" onclick="perc10()">
               <input type="button" class="perc-button" value="15%" id="button-per-15" onclick="perc15()">
               <input type="button" class="perc-button" value="25%" id="button-per-25" onclick="perc25()">
               <input type="button" class="perc-button" value="50%" id="button-per-50" onclick="perc50()">
-              <input type="text" class="perc-input" value="Custom">
+              <input type="text" class="perc-input" value="Custom" id="button-per-cus" onfocus="percus()" min="0" max="100" onchange="changeInfo()"><span id="percent-sign"></span>
             </div>
             <div id="number-people">
-              <h5>Number of People</h5>
+              <h2>Number of People</h2>
               <i class="fa fa-user icon"></i>
-              <input type="number" class="bar-input" id="input-people" value="0">
+              <input type="number" class="bar-input" id="input-people" value="0" onclick="removeValuePeople()" onchange="changeInfo()">
             </div>
           </div>
           <div id="output">
-            <div id="result">
-              <div class="output-heading">
-                <h5>Tip Amount</h5>
-                <h6>/ person</h6>
-              </div>
-              <div class="output-value">
-              </div>
-              <div class="output-heading">
-                <h5>Total</h5>
-                <h6>/ person</h6>
-              </div>
-              <div class="output-value">
-              </div>
+            <div id="table-result">
+              <table id="result-table" cellpadding="5px">
+                <tr>
+                  <td class="cell-heading"><strong>Tip Amount</strong></td>
+                  <td rowspan="2" class= "tip-result" id="tip-per-person">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="cell-subheading">/ person</td>
+                </tr>
+                <tr class="row-buffer">
+                </tr>
+                <tr>
+                  <td class="cell-heading"><strong>Total</strong></td>
+                  <td rowspan="2" class= "tip-result" id="total-per-person">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="cell-subheading">/ person</td>
+                </tr>
+              </table>
             </div>
             <div id="reset">
-              <input type="button" class="reset-button" value="RESET">
+              <div id="button-reset">
+                <input type="button" class="reset-button" id="res-butt" value="RESET" onclick="resetButton()">
+              </div>
             </div>
           </div>
         </div>
